@@ -1,0 +1,8 @@
+digraph G { graph [rankdir=TB, bgcolor="transparent", pad=0.12, nodesep=0.23, ranksep=0.27]; node [shape=box, style="filled,rounded", fillcolor="#F8F8FA", color="#D9DCE3", fontname="DejaVu Sans", fontsize=11, margin="0.15,0.09"]; edge [color="#DF0052", arrowsize=.65];
+"01. User pastes two Python blocks" -> "02. React invokes local command";
+"02. React invokes local command" -> "03. Tauri schedules blocking worker";
+"03. Tauri schedules blocking worker" -> "04. Validate and extract features";
+"04. Validate and extract features" -> "05. Compute score and confidence";
+"05. Compute score and confidence" -> "06. Return DTO / discard stale response";
+"06. Return DTO / discard stale response" -> "07. Display two percentages";
+}

@@ -1,0 +1,35 @@
+{
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "cpu": "arm",
+  "machine": "arm64",
+  "pairs": 450,
+  "parity_pass": true,
+  "cli_binary_bytes": 369312,
+  "tauri_binary_bytes": null,
+  "package_bytes": null,
+  "model_parameters_estimate_bytes": 104,
+  "peak_cli_rss_sampled_bytes": 5767168,
+  "cli_cpu_sampled_seconds": 0.092627876,
+  "batch_wall_seconds": 0.09596579195931554,
+  "cli_launch_and_compare_ms_median": 2.472645486705005,
+  "feature_us": {
+    "mean": 96.02888888888889,
+    "median": 86.0,
+    "p95": 191.0,
+    "p99": 291.0
+  },
+  "inference_us": {
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "p99": 0.0
+  },
+  "total_us": {
+    "mean": 96.10888888888888,
+    "median": 86.0,
+    "p95": 191.0,
+    "p99": 292.0
+  },
+  "gui_startup_ms": null,
+  "offline_gui_verified": false
+}

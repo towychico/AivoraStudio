@@ -1,0 +1,7 @@
+digraph G { graph [rankdir=TB, bgcolor="transparent", pad=0.12, nodesep=0.23, ranksep=0.27]; node [shape=box, style="filled,rounded", fillcolor="#F8F8FA", color="#D9DCE3", fontname="DejaVu Sans", fontsize=11, margin="0.15,0.09"]; edge [color="#DF0052", arrowsize=.65];
+"Rust CLI" -> "Shared Rust engine";
+"Tauri + textarea" -> "Local IPC";
+"Tauri + Monaco" -> "Local IPC";
+"Local IPC" -> "Shared Rust engine";
+"Shared Rust engine" -> "Same 11 features and parameters";
+}

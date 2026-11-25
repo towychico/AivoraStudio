@@ -1,0 +1,10 @@
+{
+  "check": "Python feature extraction and exported formula, not Rust",
+  "pairs": 450,
+  "max_feature_error": 0,
+  "max_probability_error": 3.3306690738754696e-16,
+  "classification_disagreements": 0,
+  "model_sha256": "b92d9818aed143bc4fca1c880128cebf7e79826b1e864b640cd932e28d3dab31",
+  "native_compilation": "not run: rustc/cargo absent",
+  "npm_install": "offline cache missing dependencies; no frontend build"
+}

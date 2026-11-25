@@ -1,0 +1,115 @@
+{
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "sample_interval_ms": 20,
+  "settle_s": 2,
+  "summary": {
+    "textarea": {
+      "valid_runs": 5,
+      "median_ready_ms": 365.523,
+      "median_peak_sampled_tree_rss_bytes": 86867968,
+      "median_tree_cpu_seconds": 0.235508592,
+      "binary_bytes": 4787888
+    },
+    "monaco": {
+      "valid_runs": 5,
+      "median_ready_ms": 737.85,
+      "median_peak_sampled_tree_rss_bytes": 97599488,
+      "median_tree_cpu_seconds": 0.205409748,
+      "binary_bytes": 5530928
+    }
+  },
+  "runs": [
+    {
+      "variant": "textarea",
+      "run": 1,
+      "status": "ok",
+      "ready_ms": 755.201,
+      "peak_sampled_tree_rss_bytes": 95141888,
+      "tree_cpu_seconds": 0.362430864,
+      "binary_bytes": 4787888
+    },
+    {
+      "variant": "monaco",
+      "run": 1,
+      "status": "ok",
+      "ready_ms": 858.415,
+      "peak_sampled_tree_rss_bytes": 98598912,
+      "tree_cpu_seconds": 0.350457344,
+      "binary_bytes": 5530928
+    },
+    {
+      "variant": "monaco",
+      "run": 2,
+      "status": "ok",
+      "ready_ms": 737.85,
+      "peak_sampled_tree_rss_bytes": 97042432,
+      "tree_cpu_seconds": 0.344145208,
+      "binary_bytes": 5530928
+    },
+    {
+      "variant": "textarea",
+      "run": 2,
+      "status": "ok",
+      "ready_ms": 365.523,
+      "peak_sampled_tree_rss_bytes": 81330176,
+      "tree_cpu_seconds": 0.235508592,
+      "binary_bytes": 4787888
+    },
+    {
+      "variant": "textarea",
+      "run": 3,
+      "status": "ok",
+      "ready_ms": 392.403,
+      "peak_sampled_tree_rss_bytes": 95551488,
+      "tree_cpu_seconds": 0.25784396,
+      "binary_bytes": 4787888
+    },
+    {
+      "variant": "monaco",
+      "run": 3,
+      "status": "ok",
+      "ready_ms": 738.772,
+      "peak_sampled_tree_rss_bytes": 98320384,
+      "tree_cpu_seconds": 0.205409748,
+      "binary_bytes": 5530928
+    },
+    {
+      "variant": "monaco",
+      "run": 4,
+      "status": "ok",
+      "ready_ms": 717.828,
+      "peak_sampled_tree_rss_bytes": 91373568,
+      "tree_cpu_seconds": 0.181250876,
+      "binary_bytes": 5530928
+    },
+    {
+      "variant": "textarea",
+      "run": 4,
+      "status": "ok",
+      "ready_ms": 354.541,
+      "peak_sampled_tree_rss_bytes": 86196224,
+      "tree_cpu_seconds": 0.153650004,
+      "binary_bytes": 4787888
+    },
+    {
+      "variant": "textarea",
+      "run": 5,
+      "status": "ok",
+      "ready_ms": 359.97,
+      "peak_sampled_tree_rss_bytes": 86867968,
+      "tree_cpu_seconds": 0.155396792,
+      "binary_bytes": 4787888
+    },
+    {
+      "variant": "monaco",
+      "run": 5,
+      "status": "ok",
+      "ready_ms": 710.293,
+      "peak_sampled_tree_rss_bytes": 97599488,
+      "tree_cpu_seconds": 0.173315584,
+      "binary_bytes": 5530928
+    }
+  ],
+  "limits": "Process tree only; shared WebView helpers can be missed. Repeated launches may be warm. No offline verification."
+}

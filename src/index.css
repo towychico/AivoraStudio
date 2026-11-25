@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@source "../node_modules/@siberui/react";
+:root {
+    color-scheme: light;
+    --brand-primary: #fe0a62;
+    --brand-hover: #df0052;
+    --brand-active: #bf0046;
+    --brand-accent: #7a1c54;
+    --background: #f8f8fa;
+    --surface: #fff;
+    --surface-secondary: #e9e9ed;
+    --surface-inverse: #111111;
+    --text-primary: #111111;
+    --text-secondary: #656570;
+    --text-inverse: #fff;
+    --border: #d9dce3;
+    --focus: #fe0a62;
+    --success: #16a34a;
+    --warning: #d97706;
+    --error: #dc2626;
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: Inter, sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 8px;
+    --transition-fast: 150ms ease;
+}
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+#root {
+    margin: 0;
+    min-height: 100%;
+}
+body {
+    background: var(--background);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+button:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}

@@ -1,0 +1,1 @@
+{"$schema":"../gen/schemas/desktop-schema.json","identifier":"default","description":"Ventana local sin acceso a red ni sistema de archivos por plugins","windows":["main"],"permissions":["core:default"]}

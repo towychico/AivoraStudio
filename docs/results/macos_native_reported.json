@@ -1,0 +1,43 @@
+{
+  "provenance": "Team-provided terminal output, 2026-11-24; not independently rerun in this documentation environment.",
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "pairs": 450,
+  "parity_pass": true,
+  "cli_binary_bytes": 369312,
+  "model_parameters_estimate_bytes": 104,
+  "first_run": {
+    "batch_wall_seconds": 0.09515499998815358,
+    "cli_launch_and_compare_ms_median": 2.2921875352039933,
+    "feature_us": {
+      "mean": 96.88222222222223,
+      "median": 87,
+      "p95": 200,
+      "p99": 287
+    },
+    "inference_us": {
+      "mean": 0,
+      "median": 0,
+      "p95": 0,
+      "p99": 0
+    },
+    "total_us": {
+      "mean": 96.93777777777778,
+      "median": 87.5,
+      "p95": 200,
+      "p99": 287
+    },
+    "peak_cli_rss_sampled_bytes": null,
+    "cli_cpu_sampled_seconds": null
+  },
+  "repeat_run": {
+    "total_us": {
+      "mean": 96.66222222222223,
+      "median": 88,
+      "p95": 199,
+      "p99": 301
+    }
+  },
+  "offline_gui_verified": false,
+  "package_bytes": null
+}

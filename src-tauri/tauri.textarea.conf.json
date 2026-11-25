@@ -1,0 +1,10 @@
+{
+  "productName": "Aivora Studio Baseline",
+  "identifier": "mx.itesm.aivorastudio.baseline",
+  "build": {
+    "beforeBuildCommand": "npm run build:textarea"
+  },
+  "bundle": {
+    "active": false
+  }
+}

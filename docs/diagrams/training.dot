@@ -1,0 +1,11 @@
+digraph G { graph [rankdir=TB, bgcolor="transparent", pad=0.12, nodesep=0.23, ranksep=0.27]; node [shape=box, style="filled,rounded", fillcolor="#F8F8FA", color="#D9DCE3", fontname="DejaVu Sans", fontsize=11, margin="0.15,0.09"]; edge [color="#DF0052", arrowsize=.65];
+"3,000 labeled pairs" -> "Group / hash-disjoint partitions";
+"Group / hash-disjoint partitions" -> "2,100 train / 450 validation";
+"2,100 train / 450 validation" -> "Fit candidates / tune threshold";
+"Fit candidates / tune threshold" -> "Select by validation F1 and size";
+"Select by validation F1 and size" -> "Export model.rs";
+"Select by validation F1 and size" -> "450 test pairs / metrics / parity";
+"Export model.rs" -> "Compile Rust";
+"450 test pairs / metrics / parity" -> "Native parity check";
+"Compile Rust" -> "Native parity check";
+}

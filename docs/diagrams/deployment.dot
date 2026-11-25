@@ -1,0 +1,9 @@
+digraph G { graph [rankdir=TB, bgcolor="transparent", pad=0.12, nodesep=0.23, ranksep=0.27]; node [shape=box, style="filled,rounded", fillcolor="#F8F8FA", color="#D9DCE3", fontname="DejaVu Sans", fontsize=11, margin="0.15,0.09"]; edge [color="#DF0052", arrowsize=.65];
+"Build tools / local assets" -> "Platform-specific release";
+"Platform-specific release" -> "macOS / system WebKit";
+"Platform-specific release" -> "Windows / WebView2";
+"Platform-specific release" -> "Linux / WebKitGTK";
+"macOS / system WebKit" -> "Embedded Rust engine";
+"Windows / WebView2" -> "Embedded Rust engine";
+"Linux / WebKitGTK" -> "Embedded Rust engine";
+}

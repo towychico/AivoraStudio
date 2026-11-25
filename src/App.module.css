@@ -1,0 +1,296 @@
+.shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+}
+.topbar {
+    height: 66px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(20px, 4vw, 60px);
+    border-bottom: 4px solid var(--brand-primary);
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font: 700 24px/1 var(--font-display);
+}
+.brand img {
+    width: 37px;
+    height: 37px;
+    object-fit: contain;
+}
+.brand small {
+    font: 10px var(--font-mono);
+    letter-spacing: 0.1em;
+    color: #d9dce3;
+    display: block;
+    margin-top: 3px;
+}
+.brandAI {
+    color: var(--brand-primary);
+}
+.local {
+    font: 11px var(--font-mono);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    background: var(--brand-primary);
+    display: inline-block;
+}
+.divider {
+    color: var(--brand-primary);
+}
+.workspace {
+    width: min(1500px, 100%);
+    margin: 0 auto;
+    padding: 24px clamp(20px, 4vw, 60px) 20px;
+    flex: 1;
+}
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.eyebrow,
+.panelMeta {
+    font: 11px var(--font-mono);
+    letter-spacing: 0.06em;
+    color: var(--brand-hover);
+    margin: 0 0 5px;
+}
+.titleContainer h1 {
+    font: 700 clamp(30px, 4vw, 48px) / 1.03 var(--font-display);
+    letter-spacing: -0.045em;
+    margin: 0;
+    color: #111;
+}
+.titleContainer h1 span {
+    color: var(--brand-primary);
+}
+.subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 8px 0 0;
+}
+.index {
+    font: 700 52px/1 var(--font-display);
+    letter-spacing: -0.08em;
+    color: var(--brand-primary);
+}
+.index span {
+    font-size: 25px;
+    margin-left: 9px;
+    vertical-align: top;
+}
+.editorContainer,
+.results {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+}
+.editorContainer .workspaceCard {
+    min-width: 0;
+    height: clamp(270px, 40vh, 490px);
+    border: 1px solid #b9bbc4;
+    border-radius: 4px;
+    box-shadow: none;
+    background: #fff;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.workspaceCard:focus-within {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 1px var(--brand-primary);
+}
+.workspaceCard .panelHeader {
+    background: #f1f1f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+.panelTitle {
+    font: 600 17px var(--font-body);
+    color: #111;
+    margin: 0;
+}
+.file {
+    font: 11px var(--font-mono);
+    color: #656570;
+}
+.workspaceCard .editorContent {
+    flex: 1 1 0;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+}
+.editorFooter {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f8fa;
+    padding: 6px 12px;
+    border-top: 1px solid var(--border);
+    font: 10px var(--font-mono);
+    color: #656570;
+}
+.input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    resize: none;
+    padding: 16px;
+    font: 14px/1.6 var(--font-mono);
+    color: #111;
+    background: #fff;
+    tab-size: 4;
+}
+.loading {
+    padding: 16px;
+    font: 11px var(--font-mono);
+    color: #656570;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+    gap: 12px;
+}
+.actions > span,
+.hint {
+    font: 11px var(--font-mono);
+    color: #656570;
+}
+.actions .run {
+    background: var(--brand-hover);
+    color: white;
+    border: 1px solid var(--brand-hover);
+    border-radius: 4px;
+    min-height: 42px;
+    padding: 10px 22px;
+    font: 600 14px var(--font-body);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: none;
+    transition: background var(--transition-fast);
+}
+.actions .run:hover:not(:disabled) {
+    background: var(--brand-active);
+}
+.actions .run:disabled {
+    opacity: 0.55;
+}
+.score,
+.confidence {
+    min-height: 126px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #111;
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    position: relative;
+}
+.score {
+    background: #df0052;
+    border-color: #df0052;
+}
+.score > span,
+.confidence > span {
+    font: 11px var(--font-mono);
+    letter-spacing: 0.08em;
+}
+.score strong,
+.confidence strong {
+    font: 700 clamp(30px, 4vw, 47px) / 1 var(--font-display);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.04em;
+}
+.score small,
+.confidence small {
+    font: 12px var(--font-body);
+}
+.meter {
+    height: 3px;
+    background: #ffffff30;
+    margin-top: 5px;
+}
+.meter i {
+    height: 100%;
+    display: block;
+    background: #fff;
+}
+.confidence .meter i {
+    background: var(--brand-primary);
+}
+.hint {
+    margin: 12px 0 0;
+    line-height: 1.5;
+}
+.error {
+    color: #b91c1c;
+    border: 1px solid #dc2626;
+    background: #fef2f2;
+    padding: 10px;
+    font-size: 13px;
+}
+.footer {
+    padding: 10px clamp(20px, 4vw, 60px);
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    font: 10px var(--font-mono);
+    border-top: 3px solid var(--brand-primary);
+}
+.footer b {
+    color: var(--brand-primary);
+}
+@media (max-width: 760px) {
+    .editorContainer,
+    .results {
+        grid-template-columns: 1fr;
+    }
+    .editorContainer .workspaceCard {
+        height: 300px;
+    }
+    .local {
+        font-size: 9px;
+    }
+    .index {
+        font-size: 32px;
+    }
+    .actions > span {
+        max-width: 45%;
+    }
+    .topbar {
+        height: 58px;
+    }
+}
